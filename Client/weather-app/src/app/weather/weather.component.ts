@@ -18,18 +18,4 @@ export class WeatherComponent {
 
   constructor(private http: HttpClient) {}
 
-  // getWeather(cityKey: string): void {
-  //   this.http
-  //     .get<Weather>(
-  //       `${environment.apiUrl}/getCurrentWeather?cityKey=${cityKey}`
-  //     )
-  //     .subscribe({
-  //       next: (weather) => {
-  //         this.weather = weather;
-  //       },
-  //       error: (response) => {
-  //         console.error(response);
-  //       },
-  //     });
-  // }
 }
