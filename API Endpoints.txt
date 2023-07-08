@@ -1,0 +1,10 @@
+
+Server's root endpoint: "http://localhost:3000/".
+
+Search Endpoint ("/search") GET: "http://localhost:3000/search". For example - "http://localhost:3000/search?query=London".
+
+Get Current Weather Endpoint GET ("/getCurrentWeather"): http://localhost:3000/getCurrentWeather". For example, "http://localhost:3000/getCurrentWeather?Key=187423".
+
+Add to Favorites Endpoint POST ("/addToFavorites"): "http://localhost:3000/addToFavorites".  For example, { "Key" : "187423", "LocalizedName" : "Bucharest"}.
+
+Delete Favorite Endpoint DELETE ("/deleteFavorite/:cityKey"):For example, "http://localhost:3000/deleteFavorite/187423".

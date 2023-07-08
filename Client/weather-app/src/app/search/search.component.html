@@ -1,0 +1,55 @@
+<div class="search-container">
+  <div class="sub-div">
+    <input type="text" [(ngModel)]="query" placeholder="Search a city" />
+    <button class="btn btn-primary rounded-pill" (click)="search()">
+      Search
+    </button>
+  </div>
+</div>
+
+<div class="main-screen">
+  <div class="city-list">
+    <h2>Search Results</h2>
+    <ul>
+      <li *ngFor="let city of cities">
+        <span>{{ city.LocalizedName }}</span>
+        <div class="fav-btn">
+          <span class="heart-icon"></span>
+          <button
+            class="btn btn-primary rounded-pill"
+            (click)="getWeather(city)"
+          >
+            View Weather
+          </button>
+          <button
+            class="btn btn-primary rounded-pill"
+            (click)="addToFavorites(city)"
+          >
+            Add to Favorites
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="weather-details">
+    <h2>Current Weather</h2>
+    <div *ngIf="weather">
+      <p>City: {{ weather.Key }}</p>
+      <p>Temperature: {{ weather.temperature }}</p>
+      <p>Weather: {{ weather.weatherText }}</p>
+    </div>
+  </div>
+
+  <div class="favorite-cities">
+    <h2>Favorite Cities</h2>
+    <ul>
+      <li *ngFor="let city of favoriteCities">
+        <span>{{ city.LocalizedName }}</span>
+        <button class="btn btn-danger" (click)="removeFromFavorites(city)">
+          Remove
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>

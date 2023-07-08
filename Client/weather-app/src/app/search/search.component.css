@@ -1,0 +1,162 @@
+
+:host {
+  display: block;
+  background-image: url("../../assets/weatherbg.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 70px;
+}
+
+.sub-div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sub-div input[type="text"] {
+  background-color: #d5e5f6;
+  padding: 8px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  width: 200px;
+}
+
+.sub-div button {
+  padding: 7px 18px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  background-color: #476b91;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: transform 0.3s ease;
+}
+
+.sub-div button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.fav-btn button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  background-color: #476b91;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: transform 0.3s ease;
+}
+
+.fav-btn button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.main-screen {
+  display: flex;
+  gap: 20px;
+}
+
+.city-list {
+  flex-basis: 50%;
+  color: black;
+  font-weight: 700;
+}
+
+.city-list h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.city-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.city-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: black;
+  font-weight: 700;
+  gap: 10px;
+}
+
+.city-list li span {
+  flex-grow: 1;
+}
+
+button.btn-outline-primary {
+  margin-left: 10px;
+  font-size: 14px;
+  margin:auto;
+}
+
+.weather-details {
+  flex-basis: 25%;
+  color: black;
+  font-weight: 700;
+}
+
+.weather-details h2 {
+  margin-top: 0;
+  font-size: 20px;
+
+}
+
+.favorite-cities {
+  flex-basis: 25%;
+  color: black;
+  font-weight: 700;
+}
+
+.favorite-cities h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.favorite-cities ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.favorite-cities li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.favorite-cities li span {
+  flex-grow: 1;
+}
+
+button.btn-outline-danger {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+
